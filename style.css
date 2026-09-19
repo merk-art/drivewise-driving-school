@@ -1,0 +1,561 @@
+/* =====================================================
+   DRIVEWISE DRIVING SCHOOL
+   MAIN STYLESHEET
+   ===================================================== */
+
+
+/* =====================================================
+   1. GENERAL PAGE SETTINGS
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f9;
+    color: #222;
+}
+
+
+/* =====================================================
+   2. HEADER
+   ===================================================== */
+
+header {
+    background-color: #0b5d3b;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   3. NAVIGATION
+   ===================================================== */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #0b5d3b;
+}
+
+
+/* =====================================================
+   4. MAIN CONTENT
+   ===================================================== */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =====================================================
+   5. SECTIONS
+   ===================================================== */
+
+section {
+    background-color: white;
+    margin: 30px 0;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #0b5d3b;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   6. HERO SECTION
+   ===================================================== */
+
+#home {
+    background: linear-gradient(
+        rgba(11, 93, 59, 0.9),
+        rgba(11, 93, 59, 0.9)
+    );
+    color: white;
+    text-align: center;
+    padding: 70px 40px;
+}
+
+#home h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+#home img {
+    width: 100%;
+    max-width: 700px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 25px auto;
+    display: block;
+}
+
+
+/* =====================================================
+   7. LINKS / BUTTONS
+   ===================================================== */
+
+main a {
+    display: inline-block;
+    background-color: #0b5d3b;
+    color: white;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+main a:hover {
+    background-color: #08462d;
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   8. COURSE SECTIONS
+   ===================================================== */
+
+#beginner-course,
+#manual-course,
+#automatic-course,
+#refresher-course,
+#defensive-driving {
+    border-left: 6px solid #0b5d3b;
+}
+
+section ul,
+section ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+section li {
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   9. PRICING TABLE
+   ===================================================== */
+
+#pricing {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #0b5d3b;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e8f5ef;
+}
+
+
+/* =====================================================
+   10. INSTRUCTOR PAGE
+   ===================================================== */
+
+#james,
+#sarah,
+#brian {
+    border-top: 5px solid #0b5d3b;
+}
+
+#james h2,
+#sarah h2,
+#brian h2 {
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   11. GALLERY
+   ===================================================== */
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+
+/* =====================================================
+   12. CONTACT INFORMATION
+   ===================================================== */
+
+#contact-information {
+    border-left: 6px solid #0b5d3b;
+}
+
+
+/* =====================================================
+   13. CONTACT FORM
+   ===================================================== */
+
+form {
+    max-width: 700px;
+    margin-top: 25px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0b5d3b;
+    box-shadow: 0 0 5px rgba(11, 93, 59, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #0b5d3b;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #08462d;
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   14. CALL TO ACTION SECTIONS
+   ===================================================== */
+
+#booking,
+#course-cta,
+#instructor-cta,
+#gallery-cta,
+#quick-contact {
+    text-align: center;
+    background-color: #e8f5ef;
+}
+
+#booking h2,
+#course-cta h2,
+#instructor-cta h2,
+#gallery-cta h2,
+#quick-contact h2 {
+    color: #0b5d3b;
+}
+
+
+/* =====================================================
+   15. ABOUT PAGE
+   ===================================================== */
+
+#about-intro {
+    text-align: center;
+}
+
+#about-intro img {
+    width: 100%;
+    max-width: 700px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   16. CORE VALUES
+   ===================================================== */
+
+#values article {
+    background-color: #f4f7f9;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border-left: 5px solid #0b5d3b;
+}
+
+#values article h3 {
+    color: #0b5d3b;
+}
+
+
+/* =====================================================
+   17. TRAINING STEPS
+   ===================================================== */
+
+#training ol {
+    padding-left: 20px;
+}
+
+#training li {
+    padding: 8px;
+}
+
+
+/* =====================================================
+   18. FOOTER
+   ===================================================== */
+
+footer {
+    background-color: #17221d;
+    color: white;
+    padding: 40px 8%;
+    margin-top: 50px;
+}
+
+footer h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer h3 {
+    color: #8ee6bb;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #8ee6bb;
+}
+
+
+/* =====================================================
+   19. RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav ul li a {
+        padding: 7px 9px;
+        font-size: 14px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 25px 20px;
+        margin: 20px 0;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    #home {
+        padding: 50px 20px;
+    }
+
+    #home h2 {
+        font-size: 32px;
+    }
+
+    #home img,
+    figure img,
+    #about-intro img {
+        height: 250px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 35px 20px;
+    }
+}
+
+
+/* =====================================================
+   20. SMALL PHONE SETTINGS
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    #home h2 {
+        font-size: 27px;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 15px;
+    }
+
+}
